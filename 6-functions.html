@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Functions</title>
+</head>
+
+<body>
+  <p id="sum-text">The sum is: </p>
+  <button id="sum-btn" type="button">Get Sum</button>
+  <script>
+
+    /*
+  
+  All About Functions
+  
+  
+  What is a function? - A function is a block of code designed to perform a specific task
+  
+  Why are functions important in JS and programming? - Functions allow you to - 
+  
+  1. reuse code
+  2. use the same code many times
+  3. Use the same code with different arguments to get different results
+  
+  
+  */
+
+    //Writing a basic function
+    function sayHello() {
+
+      // alert("Hello")
+
+    }
+
+    //calling a function
+    sayHello()
+
+
+    function secretPassword() {
+
+
+      console.log("The password is... JavaScript")
+
+    }
+
+    secretPassword()
+
+
+    //Create your own function called greeting that logs "Hello my name is your name to the console."
+
+    function greeting() {
+      console.log("Hello, my name is Nick")
+    }
+
+    greeting()
+
+
+    //returning values
+    let player1Time = 100;
+    let player2Time = 140;
+
+    function totalRaceTime() {
+
+
+      return player1Time + player2Time;
+
+    }
+
+    let raceTime = totalRaceTime();
+    console.log(raceTime)
+
+
+    //use a function to click a button to render the return value of the totalSum value when it is clicked
+
+    let num1 = 50;
+    let num2 = 50;
+
+    function totalSum() {
+
+      return num1 + num2
+
+    }
+
+    let sumText = document.getElementById("sum-text");
+    const sumBtn = document.getElementById("sum-btn")
+
+    sumBtn.addEventListener("click", renderSum);
+
+    function renderSum() {
+
+      sumText.textContent += totalSum()
+
+    }
+
+  </script>
+</body>
+
+</html>
