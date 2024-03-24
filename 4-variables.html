@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Variables</title>
+</head>
+
+<body>
+  <button id="btn" type="button">My Button</button>
+  <script>
+
+    //var
+    var firstName = "Bob"
+    console.log(firstName);
+
+    //Sting (text)
+    var lastName = "Builder"
+    console.log(lastName);
+
+    //number (intergers)
+    var oneTwoThree = 123;
+    console.log(oneTwoThree)
+
+    var oneTwoThree = 456;
+    console.log(oneTwoThree)
+
+    //boolean
+    var stillPlaying = true;
+    console.log(stillPlaying)
+
+    //array
+    var favFoods = ['steak', 'chicken', 'pizza']
+    console.log(favFoods)
+
+
+    let favColor = 'Black'
+    console.log(favColor)
+
+    // let favColor = "white";
+    // console.log(favColor)
+
+    favColor = "white";
+    console.log(favColor)
+
+
+    const price1 = 5;
+    const price2 = 6;
+    const price3 = 7;
+
+    let total = price1 + price2;
+    total = price2 + price3;
+    console.log(total)
+
+
+    const btn = document.getElementById("btn");
+    console.log(btn)
+
+    btn.addEventListener("mouseover", function () {
+
+
+      alert("You moused over the button")
+
+
+    })
+
+    const milesToKilometers = 1.60
+    console.log(milesToKilometers * 40)
+
+
+  </script>
+</body>
+
+</html>
