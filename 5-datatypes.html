@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Datatypes</title>
+</head>
+
+<body>
+  <script>
+    //JS Primitive Datatypes
+
+    //strings (text wrapped in double or single quotes) 
+    let greeting = 'Hello, how are you'
+    console.log(greeting)
+
+    let signOffMessage = "Goodbye, see you next time"
+    console.log(signOffMessage)
+
+
+    //Numbers (intergers)
+    const myFavNumber = 4;
+    console.log(myFavNumber)
+
+    let num1 = 20;
+    let num2 = 5;
+    const sum = num1 + num2;
+    console.log(sum)
+
+
+    //Bigint
+    let x = BigInt("28347629462335743567234905783249057823490")
+    console.log(x)
+
+
+    //Boolean (true or false)
+    let stillAlive = false;
+    console.log(stillAlive)
+
+    let hasAMillionDollars = false;
+    console.log(hasAMillionDollars)
+
+    if (stillAlive === true) {
+      console.log("You are still in the game!")
+    } else {
+      console.log("Game Over")
+    }
+
+    //Undefined (error in your code)
+    let firstName = "Billy";
+    // console.log(fisrName)
+
+
+    //Null (leave an empty value on purpose)
+    let player1 = null;
+    console.log(player1)
+
+
+    //Symbol
+    // Create a Symbol
+    const mySymbol = Symbol();
+
+    console.log(mySymbol);
+    // expected output: Symbol()
+
+
+
+    //Reference DataTypes
+
+    //array
+    const favTeams = ["NY Giants", "Phoenix Suns", "AZ Diamondbacks"]
+    console.log(favTeams)
+
+    //functions
+    function myFunc() {
+
+      console.log("This is my function")
+
+
+    }
+
+    myFunc();
+
+    //Object 
+    let user = {
+      userName: "bestUser001",
+      password: "IAmTheBest01!",
+      gender: "Male"
+    }
+
+    console.log(user.userName)
+
+
+
+  </script>
+</body>
+
+</html>
