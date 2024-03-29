@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Strings</title>
+</head>
+
+<body>
+  <script>
+
+
+    /*
+   
+   
+    - In JavaScript and most other programming languages, text and sentances are called strings.
+   
+    - Strings are wrapped in either double "" or single quotes ''
+   
+    Example 1 - const myString = "This is my string"
+    
+    Example 2 - const myString = 'This is my string'
+   
+   
+    */
+
+    //double quote string
+    const myString = "This is a string in double quotes"
+    console.log(myString)
+
+    //Single quote string
+    const singleQuote = 'This is a single quote string'
+    console.log(singleQuote)
+
+
+    //Challenge - Create a string in either double or single quotes that is assgined to a variable named myGoal. Write a sentence that describes your number 1 goal in life and log myGoal to the console.
+
+    const myGoal = 'My number 1 goal in life is to provide for my family'
+    console.log(myGoal)
+
+    /*
+ 
+ 
+  Escaping characters
+ 
+  - Sometimes you will need to write strings in JS that contain quotes and or apostrophes in the text which can break your code. You can get around this by using double quotes for strings that use apostophes, single quotes for text that will uses quotation marks. 
+ 
+  - You can also escape characters using a back slash \
+  
+*/
+
+    //escaping apostrophes
+    let apostrophe = "It's a beautiful day"
+    // apostrophe = 'It's a beautiful day'
+    console.log(apostrophe)
+
+    //Esacaping a quote
+    let quote = 'Patrick Henry famously said, "Give me liberty, or give me death". '
+    console.log(quote)
+
+
+    //escaping strings using \
+    let backSlash = 'It\'s a beautiful day';
+    console.log(backSlash)
+
+
+    //Concatenation (Joining strings together using +)
+    let greeting = "Hello"
+    let name = "Billy"
+    let job = "Web Developer"
+    console.log(greeting + name + "is a" + job)
+    //concatenating with empty strings
+    console.log(greeting + " " + name + " " + "is a" + " " + job)
+    console.log(greeting + " " + name + " is a" + " " + job)
+
+    //Concatenating using spaces
+    let dogName = "Biscuit"
+    let dogYears = 1;
+    console.log("My dog's name is " + dogName + ". He is " + dogYears + " year old");
+
+    //Challenge
+    //Make a sentance with the variables below. The sentance should say "My favorite teams is the AZ Diamondbacks. They won 1 World Series.""
+    // Don't forget to add the spaces...
+    let favoriteTeam = "AZ Diamondbacks"
+    let worldSeriesWins = 1;
+
+    console.log("My favorite team is the" + " " + favoriteTeam + "." + " " + "They won" + " " + worldSeriesWins + " " + "World Series.")
+
+    //Concatenating using Template Literals (Template Strings)
+    let firstName = "Johnny"
+    let lastName = "Lawrence"
+    let dojo = "Cobra Kai"
+
+    console.log(`${firstName} ${lastName} is the owner of ${dojo}.`)
+
+    //Challenge 
+    //Make a sentace with the variables below and log it to the console. The sentance should say - "Daniel LaRusso is the owner of Miyagi do Karate.""
+    let firstName2 = "Daniel"
+    let LastName2 = "LaRusso"
+    let dojo2 = "Miyagi do Karate"
+
+    console.log(`${firstName2} ${LastName2} is the owner of ${dojo2}.`)
+
+
+    //Strings Methods (Built in string functions)
+
+    //toUpperCase()
+    let text1 = "Hello World"
+    console.log(text1.toUpperCase())
+
+    //toLowerCase()
+    let text2 = "Hello World"
+    console.log(text2.toLocaleLowerCase());
+
+
+    //Length
+    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    console.log(alphabet.length)
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Functions with Parameters</title>
+</head>
+
+<body>
+  <input id="input" type="text">
+  <button id="submit-btn" type="button">Submit</button>
+  <script>
+    /*
+      
+      Why are arguments and parameters important in JS functions? - paramters and arguemts make functions more resuable by giving them the ability to perform different calclations and actions based on user input. This makes functions much more reusable which is good for limiting the amount of code you have to write.
+      
+      
+      Paramaters 
+      - Go inside the () after the function name
+      - Act as placeholders for data
+      - You can give parameters any name you want but should try to make them descriptive
+      
+      Arguments 
+      - Go inside the () when calling a function
+      
+      
+      */
+
+
+    //functions with parameters and arguments
+    function totalSum(num1, num2) {
+
+      return num1 + num2
+
+    }
+
+    console.log(totalSum(10, 10))
+
+    //Another Example
+    function favColors(color1, color2) {
+      return `My favorite colors are ${color1} and ${color2}.`
+    }
+
+    console.log(favColors("red", "green"))
+
+    //Challenge
+
+    //Create a function called multiply that takes two parameters, x and y. Have the function return x * y. Call the function with two number arguments of your choice and log it to the console.
+
+    function multiply(x, y) {
+
+      return x * y
+
+    }
+
+    console.log(multiply(5, 5))
+
+
+
+
+    //Default Value Parameter    
+    function subtract(j, k = 10) {
+
+      return j - k;
+
+    }
+
+
+    console.log(subtract(20))
+
+
+
+    //Functions calling other functions
+    const inputEl = document.getElementById("input")
+    const submitBtn = document.getElementById("submit-btn");
+
+    submitBtn.addEventListener("click", render)
+
+    function logInput() {
+
+      console.log(inputEl.value)
+
+    }
+
+    function render() {
+
+
+      logInput()
+
+    }
+  </script>
+</body>
+
+</html>
