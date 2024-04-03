@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Numbers</title>
+</head>
+
+<body>
+  <script>
+
+    /*
+    
+    - Numbers in JavaScript are also called intergers
+    - Unlike strings, numbers are not wrapped in quotes. If you do wrap a number in quotes, the browser will interpret it as a string.
+    - You can do basic math calculations with Numbers in JavaScript
+    - There are many built in methods that make working with numbers easy
+    
+    
+    */
+
+    //Numbers in JS
+    let myNumbers = 123456789
+    console.log(myNumbers)
+
+
+    //Math With Numbers
+
+    //Addition
+    let sum = 10 + 20;
+    console.log(sum)
+
+    //Subtraction 
+    let total = 100 - 50
+    console.log(total)
+
+    //Multiply
+    let product = 5 * 5;
+    console.log(product)
+
+    //Division
+    let quotient = 8 / 2
+    console.log(quotient)
+
+    //Numbers in the JS Console
+    let x = 22
+    console.log(x)
+    console.log(typeof (x))
+
+    let y = "22"
+    console.log(y)
+    console.log(typeof (y))
+
+
+    //Stringsd and Numbers get in a wrestling match, the string always wins
+    let stringVsNumber = "100" + 100;
+    console.log(stringVsNumber)
+    console.log(typeof (stringVsNumber))
+
+    let stringVsNumber2 = 30 + "40"
+    console.log(stringVsNumber2)
+    console.log(typeof (stringVsNumber2))
+
+    //JS Number Methods
+
+
+    //toFoxed() - round up and show a certain amount of decimal places depending on the paramater
+    let num = 5.56789
+    console.log(num)
+    console.log(num.toFixed(2))
+
+
+    //toString() - return a number as a string
+    let num2 = 49845
+    console.log(num2)
+    console.log(num2.toString())
+
+
+    //Using the Math Method (Math Object)
+
+    //Rounding a number up using Math.ceil()
+    let decimal1 = 9.746
+    console.log(Math.ceil(decimal1))
+
+    //Rounding down with Math.floor()
+    let decimal2 = 7.687
+    console.log(Math.floor(decimal2))
+
+    //Genrating random numbers with Math.random()
+    let randomNum = Math.random()
+    console.log(randomNum)
+
+    //Use Math.Random and Math.floor to generate a random whole number between 0-20
+    let randomWholeNum = Math.floor(Math.random() * 21)
+    console.log(randomWholeNum)
+
+    //Generate random whole number between 1 and 9
+    let random = Math.floor(Math.random() * 9) + 1;
+    console.log(random)
+
+    //Challenge - Generate a random number between 1 and 12. Log the result to the console
+
+    let oneToTwelve = Math.floor(Math.random() * 12) + 1;
+    console.log(oneToTwelve)
+
+    //Random Dice Game
+    let randomDice1 = Math.floor(Math.random() * 6) + 1
+    let randomDice2 = Math.floor(Math.random() * 6) + 1
+    console.log(`You rolled a ${randomDice1} and a ${randomDice2} for a total of ${randomDice1 + randomDice2}!`)
+
+
+  </script>
+</body>
+
+</html>
