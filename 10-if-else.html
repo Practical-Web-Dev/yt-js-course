@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS If Else Statements</title>
+</head>
+
+<body>
+  <!-- 
+    - In Programming a Boolean is a data type that equals true or false
+    
+    
+    - Booleans are used in If/Else statements to make decisions in code. This is how interactive games, web applications, and web pages are made
+    
+    
+     -->
+  <script>
+    //Booleans 
+
+    //true
+    let hasHair = true
+    console.log(hasHair)
+
+    //false
+    let isAMillionare = false;
+    console.log(isAMillionare)
+
+
+    /*
+      
+       ///////////////////////////////////////////
+                    Comparison Operators
+       ///////////////////////////////////////////
+    
+    
+      
+      
+          - Comparison Operators are used in JavaScript to write if else statements that make decisions
+      
+          > - Greater Than
+          < - Less Than
+          = - Equal too
+          === - Strict equal too
+          =! - Not Equal to
+          ==! - Strict Not Equal Too
+          >= - Greater than or equal to
+          <= - Less than or equal to
+      
+      
+       */
+
+    //If else statment
+
+    //Check if a person can enter the casino
+    let age = 20;
+
+    if (age < 21) {
+      console.log("Sorry, you are too young to play in the casino!")
+    } else {
+      console.log("Yay! You can gamble in the casino! 🎰")
+    }
+
+    //If else statement #2
+    let paidSub = true;
+
+    if (paidSub === true) {
+      console.log("You have access to all premium content!")
+    } else {
+      console.log("Please upgrade to view pemium contnet")
+    }
+
+    //Challenge If Else Statment
+    //Create an if else statement that checks is a user is logged on.
+    //If the user is logged on, create a console log that says , "Welcome back user!"
+    //If the user is not logged on, create a console log that says, "Access denied"
+    //Hint create a variable named userLoggedIn and use a boolean to set it's value to true or false. Don't forget to use the else keyword
+
+    const userLoggedIn = true;
+
+    if (userLoggedIn === true) {
+      console.log("Welcome back user!")
+    } else {
+      console.log("Access denied")
+    }
+
+
+    //else if 
+    let timeOfDay = 24;
+
+    if (timeOfDay <= 11) {
+      console.log("Good morning")
+    } else if (timeOfDay < 17) {
+      console.log("Good afternoon")
+    } else {
+      console.log("Good evening")
+    }
+
+
+    /*
+        ///////////////////////////////////////
+                    Logical Operators
+          //////////////////////////////////////
+    
+          Logical operators allow you to check for multiple conditions within an if else statement. This adds a layer of complexity to your applicatgions and make it more robust when it comes to decision making
+    
+          && - and - Both conditions must be true
+    
+          || - or - One of the conditions must be true
+    
+        ! - not
+    
+    */
+
+    //Logical operator if else statement
+    let favColor = "black";
+    let likesSteak = true;
+
+    if (favColor === "black" && likesSteak) {
+      console.log("Welcome back, Nick")
+    } else {
+      console.log("Unknown user!")
+    }
+
+    // or logical operator ||
+    const a = 3;
+    const b = 2;
+
+    if (a > 3 || b > 3) {
+      console.log("Yay, one number is greater than one!")
+    } else {
+      console.log("Both numbers are too small!")
+    }
+
+    //Challenge If else statment with logical operators (Pretend Job Application)
+    //Create an if else statement with two varaibles
+    //1 - const knowsHTML = true
+    //2 - const knowsXhtml = true
+    //If either variable is true, console.log("You may apply for the job")
+    //else if they are both false console.log("Sorry, you are not qualified for the position")
+
+    const knowsHTML = true;
+    const knowsXhtml = false;
+
+    if (knowsHTML || knowsXhtml) {
+      console.log("You may apply for the position")
+    } else {
+      console.log("Sorry, you are not qualifed for the position.")
+    }
+
+    // == Loose equality operator
+    if (1 == "1") {
+      console.log("Yes, they both equal 1...")
+    }
+
+    // === Strict equality operator
+    if ("1" === "1") {
+      console.log("They are both the same")
+    } else {
+      console.log("False, they are different data types!")
+    }
+
+
+  </script>
+</body>
+
+</html>
