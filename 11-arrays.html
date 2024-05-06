@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Arrays</title>
+</head>
+
+<body>
+  <script>
+
+    /*
+ 
+     
+     - Arrays are an ordered list of items (variables that can hold multiple values)
+     
+     - An array index starts at 0 not 1 (the first value in an array is counted as 0 instead of 1) 
+     
+     
+     */
+
+
+    //Our first array (social media newsfeed)
+    let redditFeed = [
+      "13 Golf Tips to Instantly Improve Your Game", //0
+      "Man Completes Impossible Pizza Challenge", //1
+      "Halo CE Speed Run Clip" //2
+    ]
+
+    console.log(redditFeed)
+
+    //Getting array values with bracket notation
+    console.log(redditFeed[0])
+    console.log(redditFeed[2])
+
+    //Challenge - Log out pizza challenge title using bracket notation
+    console.log(redditFeed[1])
+
+
+    //Array with multiple data types
+    let person = [
+      "John",
+      "Smith",
+      32,
+      90210,
+      true
+    ]
+
+    console.log(person)
+
+    //Challenge - Log 32 from the person array to the console using bracket notation
+    console.log(person[2])
+
+
+    //Challenge - Log John to the console from the person array using bracket notation
+    console.log(person[0])
+
+
+    //Adding a value to the end of an array - push()
+    person.push("Texas")
+    console.log(person)
+
+
+    person.push("Pizza")
+    console.log(person)
+
+    //Remove last value from an array - pop()
+    person.pop();
+    console.log(person)
+
+    person.pop();
+    console.log(person)
+
+    //Remove the first item from an array - shift()
+    person.shift();
+    console.log(person)
+
+    //Adding new elements to the beggining of an array - unshift()
+    person.unshift("John")
+    console.log(person)
+
+
+    //Challenge Messaging App - Add the following string to the end of the messages array "Same here, have a nice day". Then log the messages array out to the console to see if the string was added.
+
+    let messages = [
+
+      "Hey, how is it going",
+      "I'm good, how are you?",
+      "Great, I really enjoyed working with you!"
+
+    ]
+
+    let reply = "Same here, have a nice day";
+    messages.push(reply);
+    console.log(messages);
+
+
+  </script>
+</body>
+
+</html>
