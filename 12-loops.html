@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Loops</title>
+</head>
+
+<body>
+  <p id="greeting-el"></p>
+  <script>
+
+
+    /*
+    
+    - Loops in JavaScript and programming in general allow you to run a set of instructions that is repeated until a specific goal or condition is reached.
+   
+    - Loops allow you to run one block of code instead of writing several lines of code to achieve the same outcome
+   
+    
+    */
+
+    //Basic Syntax of a for loop
+    //    START           FINISH       STEP SIZE
+    for (let count = 1; count <= 11; count += 1) {
+
+      console.log(count)
+
+    }
+
+
+    //Count to 100 by 10
+    for (let x = 10; x <= 100; x += 10) {
+
+      console.log(x)
+
+    }
+
+
+    //Challenge 
+    //Create a for loop that counts from 1 to 20. Look at the examples above to check your syntax
+
+    for (let i = 0; i <= 20; i++) {
+      console.log(i)
+    }
+
+
+    //Be careful when counting with loops! If you set a number too high and you have a low end computer, your computer may crash
+
+
+    //Looping through an array
+    let messages = [
+      "Hey, how are you?",
+      "I'm great, thanks. How about you?",
+      "All good, working on some new projects",
+      "Same here!"
+    ]
+
+    for (let message = 0; message < messages.length; message++) {
+      console.log(messages[message])
+    }
+
+    //Challenge 
+    //Create a for loop that logs out all of the numbers in the array. Remember to use .length
+
+    let numbers = [7, 3, 9, 23, 2]
+
+    for (let number = 0; number < numbers.length; number++) {
+
+      console.log(numbers[number])
+
+    }
+
+
+    //Rendering Data to the user using an array and loop
+    let sentance = ["Hello", "my", "name", "is", "Practical Web Dev"]
+    let greetingEl = document.getElementById("greeting-el")
+
+
+    for (let s = 0; s < sentance.length; s++) {
+      greetingEl.textContent += " " + sentance[s];
+    }
+
+  </script>
+</body>
+
+</html>
