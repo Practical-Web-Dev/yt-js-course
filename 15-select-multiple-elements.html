@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Links Profile | Practical Web Dev</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: black;
+    }
+
+    #links-profile-container {
+      margin: 5rem auto;
+      width: 384px;
+      height: 620px;
+      background-color: #141414;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 8px;
+    }
+
+    .avatar-img img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      margin-top: 2rem;
+    }
+
+    .profile-text {
+      text-align: center;
+    }
+
+    .profile-text h1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .profile-text h4 {
+      color: #c5f82a;
+      font-size: 14px;
+      margin-top: .5rem;
+    }
+
+    .profile-text p {
+
+      color: #ffffff;
+      font-size: 14px;
+      margin-top: 1.5rem;
+
+    }
+
+    .profile-links-container {
+      margin-top: 1.5rem;
+    }
+
+    .links-menu li {
+      list-style-type: none;
+      text-align: center;
+      width: 304px;
+      height: 45px;
+      margin: 1rem 0rem;
+    }
+
+    .links-menu li a {
+      background-color: #333333;
+      text-decoration: none;
+      color: white;
+      width: 304px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: all .2s ease-in;
+    }
+
+    .links-menu li a:hover {
+      background-color: #c5f82a;
+      color: #141414;
+    }
+
+    /* 
+
+
+
+
+
+Media Queries 
+
+
+
+
+
+*/
+
+    @media screen and (max-width: 500px) {
+
+      #links-profile-container {
+        width: 90%;
+        height: 620px;
+      }
+
+      .links-menu li a {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+    @media screen and (max-width: 280px) {
+
+
+      .links-menu li {
+
+        width: 260px;
+
+      }
+
+
+      .links-menu li a {
+        width: 90%;
+        font-size: 12px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="links-profile-container">
+      <div class="avatar-img">
+        <img src="img/gravatar.png" alt="Practical Web Dev">
+      </div>
+      <div class="profile-text">
+        <h1 id="profile-title">Practical Web Dev</h1>
+        <h4>Phoenix, Arizona</h4>
+        <p class="tag-line">"Teaching Web Development online for fun."</p>
+      </div>
+      <div class="profile-links-container">
+        <ul class="links-menu">
+          <li>
+            <a class="item" href="https://github.com/Practical-Web-Dev" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a class="item" href="#">FrontEnd Mentor</a>
+          </li>
+          <li>
+            <a class="item" href="#">LinkedIn</a>
+          </li>
+          <li>
+            <a class="item" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class="item" id="insta-link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script>
+
+    //The Old Way
+    //Select Multiple Elements Using getElementsByClassName() - getElementsByTagName()
+
+    // const listItems = document.getElementsByClassName("item");
+    // console.log(listItems)
+
+    // listItems[4].style.color = "red"
+
+    // // listItems.forEach((item) => {
+
+    // //   console.log(item.innerTex)
+
+    // // })
+
+    // //Convert HTML Collection into an array
+    // const listItemsArray = Array.from(listItems)
+
+    // listItemsArray.forEach((item) => {
+
+    //   console.log(item.innerText)
+    //   item.innerText = "Hello World"
+    //   item.style.color = "yellow"
+    //   item.style.backgroundColor = "purple"
+
+    // })
+
+
+    //Select Multiple Elements The Modern Way querySelectorAll()
+    const listItems = document.querySelectorAll(".item")
+    console.log(listItems)
+    //Using Bracket notation
+    listItems[1].innerText = "Hello"
+    listItems[0].innerText = "Goodbye"
+
+    listItems.forEach((item) => {
+
+      item.style.color = "orange"
+      item.style.backgroundColor = "purple"
+      item.innerText = "Links"
+
+    })
+
+
+  </script>
+</body>
+
+</html>
