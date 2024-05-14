@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Elements With JS</title>
+  <style>
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-heading {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Create Elements With JS</h1>
+    <p id="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti illum consequuntur distinctio
+      recusandae alias
+      quisquam! At eum recusandae odit ullam repellendus dignissimos reprehenderit voluptatem accusamus fugiat, commodi
+      quia, doloremque totam magnam dicta animi necessitatibus aspernatur, sint nulla molestias culpa quidem? Sapiente
+      magnam officiis fugiat odit tenetur iure error, aliquid laborum!</p>
+    <p id="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque impedit officiis repellat,
+      molestiae
+      debitis et ducimus quidem saepe ut dolore architecto facere natus similique nobis, accusamus deserunt suscipit ex
+      iste asperiores. Praesentium quos libero itaque tempore ab voluptatem voluptas doloribus natus rerum eligendi
+      dicta dolor, iure similique adipisci blanditiis?</p>
+    <!-- Add a new Heading -->
+
+
+  </div>
+  <script>
+    //Create new H2 Element
+    const newHeading = document.createElement("h2")
+    console.log(newHeading)
+
+    //Create Text Node
+    const newHeadingText = document.createTextNode("This is my New Heading")
+
+    //append text to h2
+    newHeading.appendChild(newHeadingText)
+
+    //Grab onto container element with JS
+    const container = document.querySelector(".container");
+
+    //append new element to the page
+    container.appendChild(newHeading)
+
+    //Add class name to new element
+    newHeading.className = "article-heading"
+
+    //Add ID to new element
+    newHeading.id = "header-id"
+
+  </script>
+</body>
+
+</html>
