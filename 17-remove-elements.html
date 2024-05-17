@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Elements with JS</title>
+
+  <style>
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-heading {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Heading</h1>
+    <p id="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti illum consequuntur distinctio
+      recusandae alias
+      quisquam! At eum recusandae odit ullam repellendus dignissimos reprehenderit voluptatem accusamus fugiat, commodi
+      quia, doloremque totam magnam dicta animi necessitatibus aspernatur, sint nulla molestias culpa quidem? Sapiente
+      magnam officiis fugiat odit tenetur iure error, aliquid laborum!</p>
+    <p id="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque impedit officiis repellat,
+      molestiae
+      debitis et ducimus quidem saepe ut dolore architecto facere natus similique nobis, accusamus deserunt suscipit ex
+      iste asperiores. Praesentium quos libero itaque tempore ab voluptatem voluptas doloribus natus rerum eligendi
+      dicta dolor, iure similique adipisci blanditiis?</p>
+    <h2 id="h2">Another Heading</h2>
+    <p id="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a velit alias culpa animi doloremque
+      qui! Eum sunt mollitia nobis ipsam libero voluptatum velit, dolores labore, ipsa distinctio, similique autem sint
+      numquam quaerat illum saepe quis doloribus in pariatur soluta beatae id quod. Impedit soluta non molestias
+      voluptates consectetur veniam, similique unde minus, magni repellat optio aliquid id maxime repellendus molestiae
+      nulla porro, odit nemo officiis hic quaerat eligendi. Tempora sunt fugiat ipsam qui pariatur beatae error,
+      doloremque totam temporibus ut vero praesentium consectetur officiis officia? Consequatur, optio perspiciatis.
+    </p>
+
+    <p id="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tenetur perspiciatis ut sit minima
+      laborum inventore praesentium, atque soluta ea. Cum impedit natus ab sit mollitia assumenda sunt! Minus aperiam
+      minima quibusdam ex autem sapiente praesentium eligendi ut temporibus vel? Maiores sed vel accusantium tempora
+      suscipit laborum quasi blanditiis doloribus praesentium debitis reprehenderit eaque dolore beatae eum, officiis
+      ullam eveniet accusamus libero obcaecati voluptatibus deleniti eius rerum id? Veniam quisquam neque, ad earum esse
+      beatae illum quasi officia aspernatur numquam exercitationem id vel modi eius quae odit explicabo quam sit dolorem
+      vitae officiis. Perspiciatis, delectus neque! Illum, cupiditate. Vero, doloribus.</p>
+
+    <button id="remove-element-btn">Remove Element</button>
+  </div>
+  <script>
+    function removePara4() {
+
+      document.getElementById("p-4").remove();
+
+    }
+
+    removePara4()
+
+    //Remove H2 with event listener
+    const removeBtn = document.getElementById("remove-element-btn")
+
+    removeBtn.addEventListener("click", function () {
+
+      const h2 = document.getElementById("h2")
+
+      h2.remove()
+
+    })
+  </script>
+</body>
+
+</html>
