@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Event Listeners</title>
+</head>
+
+<body>
+  <!-- Inline Event Listener -->
+  <button onclick="showMessage()">Click Me</button>
+
+  <!-- Add Event listener Using . Notation -->
+  <button id="btn-2">Button 2</button>
+
+  <!-- Add an Event Listener using .addEventListener -->
+  <button id="btn-3">Button 3</button>
+
+  <script>
+    /*
+ 
+    - An Event in JavaScript is an action. Event listeners tell web browsers what type of event causes the action and when the action should be executed (When you close out of a popup by clicking the x symbol, this might trigger another popup to appear)
+ 
+ 
+    The Most Common Events in JS happen when a user...
+ 
+    - Clicks a button
+    - Presses a key on the keyboard
+    - Resizes an element
+    - Closes a window
+    - Hovers over an element
+    - Submits a form
+ 
+    - There are 3 ways to add an event listener to an HTML Element. This includes...
+ 
+    1. Inline Event Listeners - Adding an event listener onto the HTML element itself (Old way, not very secure, can cause problems in medium to large projects)
+ 
+    2. Adding an event listener using . notation. A little better but sloppy
+ 
+    3. Using .addEventListener - More modern clean and organized way. Allows you to add as many event listeners as you want on one element
+ 
+ 
+    */
+
+
+
+    const btn2 = document.getElementById("btn-2")
+    const btn3 = document.getElementById("btn-3")
+
+    btn3.addEventListener("click", fireBtnThree);
+
+
+    function showMessage() {
+
+      alert("You clicked the button")
+
+    }
+
+    btn2.onclick = function () {
+
+
+      alert("You clicked button 2")
+
+    }
+
+
+    function fireBtnThree() {
+
+
+      alert("You clicked button three!")
+
+
+    }
+
+  </script>
+</body>
+
+</html>
